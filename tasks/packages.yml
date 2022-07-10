@@ -4,3 +4,6 @@
       - neovim
       - htop
       - tmux
+      - fzf
+      - fdfind
+      - tree
