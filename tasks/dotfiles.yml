@@ -28,7 +28,7 @@
 
 - name: create nvim config directory
   file:
-    path: /home/eb/.config/nvim
+    path: /home/eb/.config/nvim/nvim_plug/plugged
     state: directory
     owner: eb
     group: eb

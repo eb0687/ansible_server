@@ -33,6 +33,7 @@ set si
 autocmd InsertEnter * norm zz
 
 " Keybinds
+
 let mapleader = " "
 nnoremap <leader>h :split<CR>
 nnoremap <leader>v :vsplit<CR>
@@ -52,3 +53,40 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap > >gv
 vnoremap < <gv
 map gf :edit <cfile><cr>
+
+" Plugins
+" This section needs to stay above the plug call
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.config/nvim/nvim_plug/plugged')
+
+Plug 'sainnhe/gruvbox-material'
+
+call plug#end()
+
+" Plugin Settings
+
+" Colorscheme - gruvbox-material (https://github.com/sainnhe/gruvbox-material)
+if has('termguicolors')
+    set termguicolors
+endif
+set background=dark
+
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_enable_bold = 1
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_transparent_background = 1
+let g:gruvbox_material_visual = 'red background'
+let g:gruvbox_material_menu_selection_background = 'orange'
+let g:gruvbox_material_ui_contrast = 'low'
+let g:gruvbox_material_diagnostic_text_highlight = 1
+let g:gruvbox_material_diagnostic_line_highlight = 1
+let g:gruvbox_material_diagnostic_virtual_text = 'colored'
+let g:gruvbox_material_better_performance = 1
+let g:gruvbox_material_show_eob = 0
+
+colorscheme gruvbox-material
