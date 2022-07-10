@@ -42,6 +42,8 @@ nnoremap <leader>xo :source %<CR>
 nnoremap Y y$
 nnoremap <leader>ho :noh<CR>
 nnoremap <C-s> :%s/
+nnoremap <silent> <tab> :bn<CR>
+nnoremap <silent> <S-tab> :bp<CR>
 imap jk <Esc>
 imap kj <Esc>
 imap jj <Esc>
