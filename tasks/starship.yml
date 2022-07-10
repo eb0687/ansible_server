@@ -1,6 +1,6 @@
 - name: Download starship
   ansible.builtin.get_url:
-    url: curl -sS https://starship.rs/install.sh
+    url: https://starship.rs/install.sh
     dest: /tmp/starship_install.sh
 
 - name: Install starship
