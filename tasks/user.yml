@@ -1,7 +1,7 @@
 - name: add ansible user
-    user:
-      name: ansible
-      system: yes
+  user:
+    name: ansible
+    system: yes
 
   - name: set up sudo for ansible user
     copy:
