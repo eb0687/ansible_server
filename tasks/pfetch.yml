@@ -1,0 +1,6 @@
+- name: download and install pfetch
+  ansible.builtin.get_url:
+    url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
+    dest: /tmp/pfetch
+    mode: 0755
+
