@@ -11,38 +11,5 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/starship.yml
+    - include: tasks/dotfiles.yml
 
-    - name: copy .bashrc to home directory
-      copy:
-        src: dotfiles/bashrc
-        dest: /home/eb/.bashrc
-        owner: eb
-        group: eb
-
-    - name: copy gitconfig to home directory
-      copy:
-        src: dotfiles/gitconfig
-        dest: /home/eb/.gitconfig
-        owner: eb
-        group: eb
-
-    - name: copy starship.toml to config directory
-      copy:
-        src: dotfiles/starship
-        dest: /home/eb/.config/starship/starship.toml
-        owner: eb
-        group: eb
-
-    - name: create nvim config directory
-      file:
-        path: /home/eb/.config/nvim
-        state: directory
-        owner: eb
-        group: eb
-
-    - name: copy init.vim to config directory
-      copy:
-        src: dotfiles/init.vim
-        dest: /home/eb/.config/nvim/init.vim
-        owner: eb
-        group: eb
