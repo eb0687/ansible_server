@@ -1,6 +1,12 @@
-- name: download and install pfetch
+- name: download pfetch
   ansible.builtin.get_url:
     url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
     dest: /tmp/pfetch
     mode: 0755
 
+- name: move pfetch to path
+  ansible.builtin.copy:
+    src: /tmp/pfetch
+    dest: /usr/local/bin/pfetch
+    owner: root
+    group: root
