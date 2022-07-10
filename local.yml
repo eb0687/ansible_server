@@ -8,7 +8,7 @@
 
     - name: copy .bashrc to home directory
       copy:
-        src: files/bashrc
+        src: dotfiles/bashrc
         dest: $HOME
         owner: $USER
         owner: $USER
