@@ -26,3 +26,10 @@
         dest: /home/eb/.config/starship/starship.toml
         owner: eb
         owner: eb
+
+    - name: copy init.vim to config directory
+      copy:
+        src: dotfiles/init.vim
+        dest: /home/eb/.config/nvim/init.vim
+        owner: eb
+        owner: eb
