@@ -12,9 +12,16 @@ This [video](https://youtu.be/gIDywsGBqf4) tutorial will be used as a starting b
 
 ---
 
-## TLDR
+## Instructions
 
-Use the below command in a terminal to setup servers:
+Intall ansible usign the below command.
+
+```
+sudo apt install ansible
+```
+
+Run the below command in a terminal to pull my config.
+
 ```
 sudo ansible-pull -U https://github.com/eb0687/ansible_server.git
 ```
