@@ -100,6 +100,7 @@ alias l='ls -CF'
 alias clear='clear -x'
 alias cl='clear -x'
 alias vi='vim'
+alias v='nvim'
 alias ..='cd ..'
 alias reload='source ~/.bashrc'
 
