@@ -4,6 +4,6 @@
   become: true
 
   tasks:
-  - name: install nvim
+  - name: install neovim
     package:
-      name: nvim
+      name: neovim
