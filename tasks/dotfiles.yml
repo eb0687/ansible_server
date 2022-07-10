@@ -1,7 +1,14 @@
-- name: copy .bashrc to home directory
+- name: copy bashrc to home directory
   copy:
     src: dotfiles/bashrc
     dest: /home/eb/.bashrc
+    owner: eb
+    group: eb
+
+- name: copy tmux.conf to home directory
+  copy:
+    src: dotfiles/tmux.conf
+    dest: /home/eb/.tmux.conf
     owner: eb
     group: eb
 
