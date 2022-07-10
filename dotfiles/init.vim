@@ -65,6 +65,8 @@ endif
 call plug#begin('~/.config/nvim/nvim_plug/plugged')
 
 Plug 'sainnhe/gruvbox-material'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -88,5 +90,25 @@ let g:gruvbox_material_diagnostic_line_highlight = 1
 let g:gruvbox_material_diagnostic_virtual_text = 'colored'
 let g:gruvbox_material_better_performance = 1
 let g:gruvbox_material_show_eob = 0
-
 colorscheme gruvbox-material
+
+" FZF settings
+let g:fzf_layout = { 'window': { 'width': 1.0 , 'height': 1.0 } }
+let g:fzf_action = { 'ctrl-t': 'edit'}
+
+let g:fzf_colors =
+    \ { 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Comment'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Statement'],
+      \ 'info':    ['fg', 'PreProc'],
+      \ 'border':  ['fg', 'Ignore'],
+      \ 'prompt':  ['fg', 'Conditional'],
+      \ 'pointer': ['fg', 'Exception'],
+      \ 'marker':  ['fg', 'Keyword'],
+      \ 'spinner': ['fg', 'Label'],
+      \ 'header':  ['fg', 'Comment'] }
+
+nnoremap <silent> <leader>ff :Files<CR>
