@@ -11,3 +11,10 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/starship.yml
+
+    - name: copy .bashrc to home directory
+      copy:
+        src: files/bashrc
+        dest: $HOME
+        owner: $USER
+        owner: $USER
