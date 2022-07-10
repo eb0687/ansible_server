@@ -107,6 +107,7 @@ alias g='git'
 alias gs='git status'
 alias ga='git add'
 alias gcom='git commit -v'
+alias gp='git push'
 alias apconfig='sudo ansible-pull -U https://github.com/eb0687/ansible_server.git'
 alias f='fzf'
 
