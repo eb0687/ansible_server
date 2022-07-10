@@ -17,25 +17,30 @@
         src: dotfiles/bashrc
         dest: /home/eb/.bashrc
         owner: eb
-        owner: eb
+        group: eb
 
     - name: copy gitconfig to home directory
       copy:
         src: dotfiles/gitconfig
         dest: /home/eb/.gitconfig
         owner: eb
-        owner: eb
+        group: eb
 
     - name: copy starship.toml to config directory
       copy:
         src: dotfiles/starship
         dest: /home/eb/.config/starship/starship.toml
         owner: eb
-        owner: eb
+        group: eb
 
     - name: copy init.vim to config directory
+      file:
+        path: /home/eb/.config/nvim
+        state: directory
+        owner: eb
+        group: eb
       copy:
         src: dotfiles/init.vim
         dest: /home/eb/.config/nvim/init.vim
         owner: eb
-        owner: eb
+        group: eb
