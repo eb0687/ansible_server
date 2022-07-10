@@ -10,5 +10,5 @@
       copy:
         src: dotfiles/bashrc
         dest: $HOME
-        owner: $USER
-        owner: $USER
+        owner: eb
+        owner: eb
