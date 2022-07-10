@@ -2,7 +2,6 @@
   ansible.builtin.get_url:
     url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
     dest: /tmp/pfetch
-    mode: 0755
 
 - name: move pfetch to path
   ansible.builtin.copy:
@@ -10,3 +9,4 @@
     dest: /usr/local/bin/pfetch
     owner: root
     group: root
+    mode: 0755
