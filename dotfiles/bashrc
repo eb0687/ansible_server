@@ -103,6 +103,7 @@ alias vi='vim'
 alias v='nvim'
 alias ..='cd ..'
 alias reload='source ~/.bashrc'
+alias g='git'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
