@@ -1,6 +1,6 @@
 - name: Install packages
   apt:
-    name: 
+    name:
       - neovim
       - htop
       - tmux
