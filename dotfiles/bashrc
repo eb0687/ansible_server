@@ -153,3 +153,17 @@ export FZF_DEFAULT_OPTS="
 --header='FZF'
 --bind 'ctrl-t:execute(echo {+} | xargs -o nvim)'
 "
+
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="
+        --preview 'bat --color=always --line-range :50 {}'
+        --header='SEARCH FILES'
+        "
+
+export FZF_ALT_C_COMMAND='fdfind --type d --color=never --hidden --exclude .git --search-path=$HOME'
+export FZF_ALT_C_OPTS="
+        --preview 'tree -C {} | head  -50'
+        --header='CHANGE DIRECTORY'
+        "
+
+source /usr/share/doc/fzf/examples/key-bindings.bash
