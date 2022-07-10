@@ -5,5 +5,5 @@
       - htop
       - tmux
       - fzf
-      - fdfind
+      - fd-find
       - tree
