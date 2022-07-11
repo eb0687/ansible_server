@@ -18,6 +18,11 @@
         user: eb
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlLyWGGAD+jPIap+hCSvDhVyfxO/X3sk+SuTuZG4PKJ ebuntu default"
 
+    - name: add ssh keys for t490
+      authorized_key:
+        user: eb
+        key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAwOSl1vMCxFVbKpAi43keALKFlP4CWxmstZ3EOSUPWk eb-t490"
+
   tasks:
     - include: tasks/packages.yml
     - include: tasks/dotfiles.yml
