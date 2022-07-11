@@ -16,7 +16,8 @@ This is still a WIP and mainly for my personal use. Please make backups of your 
 
 ## How to use?
 
-You do not have to use this, the script is tailored to my setup and may break your configs. You may use it as inpiration to build your own setup but if you are interested instructions below on how to run:
+You do not have to use this as it is tailored to my setup and may break your configs. 
+You may use it as inpiration to build your own setup, but if you are interested instructions below on how to run:
 
 
 - Intall ansible using the below command.
