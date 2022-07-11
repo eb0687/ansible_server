@@ -7,7 +7,7 @@
       apt:
         update_cache: yes
       changed_when: False
-    
+
     - name: add ssh keys for ansible
       authorized_key:
         user: eb
