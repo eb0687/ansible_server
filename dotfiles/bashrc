@@ -150,17 +150,17 @@ export FZF_DEFAULT_OPTS="
 --info=inline
 --no-unicode
 --margin=2,5
---preview-window=:hidden
 --color fg:#DFBF8E,bg:#1D2021,hl:#E78A4E,fg+:#DFBF8E,bg+:#32302F,hl+:#EA6962,border:#DFBF8E
 --color info:#E78A4E,prompt:#EA6962,spinner:#EA6962,pointer:#EA6962,marker:#EA6962
 --prompt=' '
 --header='FZF'
+--bind '?:toggle-preview'
 --bind 'ctrl-t:execute(echo {+} | xargs -o nvim)'
 "
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="
-        --preview 'bat --color=always --line-range :50 {}'
+        --bind '?:toggle-preview'
         --header='SEARCH FILES'
         "
 
