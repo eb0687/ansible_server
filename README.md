@@ -10,22 +10,28 @@ Playing around with virtual machines and servers is fun, however replicating the
 
 This [video](https://youtu.be/gIDywsGBqf4) tutorial will be used as a starting base to create my own template for ansible automation techniques.
 
+This is still a WIP and mainly for my personal use. Please make backups of your configs if you plan on using this.
+
 ---
 
-## Instructions
+## How to use?
 
-Intall ansible usign the below command.
+You do not have to use this, the script is tailored to my setup and may break your configs. You may use it as inpiration to build your own setup but if you are interested instructions below on how to run:
+
+
+- Intall ansible using the below command.
 
 ```
 sudo apt install ansible
 ```
 
-Run the below command in a terminal to pull my config.
+- Run the below command in a terminal to pull my config.
 
 ```
 sudo ansible-pull -U https://github.com/eb0687/ansible_server.git
 ```
 
 ---
+
 
 
