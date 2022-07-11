@@ -88,7 +88,6 @@ let g:gruvbox_material_ui_contrast = 'low'
 let g:gruvbox_material_diagnostic_text_highlight = 1
 let g:gruvbox_material_diagnostic_line_highlight = 1
 let g:gruvbox_material_diagnostic_virtual_text = 'colored'
-let g:gruvbox_material_better_performance = 1
 let g:gruvbox_material_show_eob = 0
 colorscheme gruvbox-material
 
