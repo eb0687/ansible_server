@@ -150,6 +150,7 @@ export FZF_DEFAULT_OPTS="
 --info=inline
 --no-unicode
 --margin=2,5
+--preview-window=:hidden
 --color fg:#DFBF8E,bg:#1D2021,hl:#E78A4E,fg+:#DFBF8E,bg+:#32302F,hl+:#EA6962,border:#DFBF8E
 --color info:#E78A4E,prompt:#EA6962,spinner:#EA6962,pointer:#EA6962,marker:#EA6962
 --prompt=' '
