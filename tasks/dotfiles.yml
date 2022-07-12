@@ -40,16 +40,24 @@
     owner: eb
     group: eb
 
-- name: create .bashtools config directory
+- name: create .bashtools in home directory
   file:
     path: /home/eb/.bashtools
     state: directory
     owner: eb
     group: eb
 
-- name: copy init.vim to config directory
+- name: copy fzf bash completions to .bashtools directory
   copy:
     src: dotfiles/fzf-bash-completions
     dest: /home/eb/.bashtools/fzf-bash-completion.sh
     owner: eb
     group: eb
+
+- name: copy fzf-tmux to .local/bin directory
+  copy:
+    src: dotfiles/fzf-tmux
+    dest: /home/eb/.local/bin/fzf-tmux
+    owner: eb
+    group: eb
+
