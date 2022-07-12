@@ -60,4 +60,5 @@
     dest: /home/eb/.local/bin/fzf-tmux
     owner: eb
     group: eb
+    mode: 0755
 
