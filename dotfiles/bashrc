@@ -171,3 +171,7 @@ export FZF_ALT_C_OPTS="
         "
 
 source /usr/share/doc/fzf/examples/key-bindings.bash
+
+# fzf tab completion
+source ~/.bashtools/fzf-bash-completion.sh
+bind -x '"\t": fzf_bash_completion'

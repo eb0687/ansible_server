@@ -39,3 +39,10 @@
     dest: /home/eb/.config/nvim/init.vim
     owner: eb
     group: eb
+
+- name: create .bashtools config directory
+  file:
+    path: /home/eb/.bashtools
+    state: directory
+    owner: eb
+    group: eb
