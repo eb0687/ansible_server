@@ -46,3 +46,10 @@
     state: directory
     owner: eb
     group: eb
+
+- name: copy init.vim to config directory
+  copy:
+    src: dotfiles/fzf-bash-completions
+    dest: /home/eb/.bashtools/fzf-bash-completion.sh
+    owner: eb
+    group: eb
