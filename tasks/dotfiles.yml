@@ -54,11 +54,3 @@
     owner: eb
     group: eb
 
-- name: copy fzf-tmux to .local/bin directory
-  copy:
-    src: dotfiles/fzf-tmux
-    dest: /home/eb/.local/bin/fzf-tmux
-    owner: eb
-    group: eb
-    mode: 0755
-
