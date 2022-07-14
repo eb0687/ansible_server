@@ -1,9 +1,9 @@
-- name: add ansible user
+- name: Add ansible user.
   user:
     name: ansible
     system: yes
 
-- name: set up sudo for ansible user
+- name: Set up sudo for ansible user.
   copy:
     src: files/sudoers_ansible
     dest: /etc/sudoers.d/ansible

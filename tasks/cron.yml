@@ -1,4 +1,4 @@
-- name: add ansible-pull cron job
+- name: Add ansible-pull cron job.
   cron:
     name: ansible auto-provision
     user: ansible

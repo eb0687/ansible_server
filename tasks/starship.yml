@@ -1,4 +1,4 @@
-- name: Download starship.
+- name: Download Starship.
   ansible.builtin.get_url:
     url: https://starship.rs/install.sh
     dest: "{{ download_dir }}/starship_install.sh"

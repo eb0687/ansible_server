@@ -1,9 +1,9 @@
-- name: download pfetch
+- name: Download pfetch.
   get_url:
     url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
     dest: "{{ download_dir }}/pfetch"
 
-- name: move pfetch to path
+- name: Move pfetch to path.
   copy:
     src: "{{ download_dir }}/pfetch"
     dest: /usr/local/bin/pfetch
