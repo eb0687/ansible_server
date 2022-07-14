@@ -2,6 +2,8 @@
   connection: local
   become: true
 
+  vars_files: vars/vars.yml
+
   pre_tasks:
     - name: update repositories for Ubuntu
       apt:
@@ -11,22 +13,22 @@
 
     - name: add ssh keys for ansible
       authorized_key:
-        user: eb
+        user: "{{ user }}"
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExEosYvNYgwV7M3r2ho2o+Hbq2B2FPHSaq2+ixEpesB ansible"
 
     - name: add ssh keys for ebuntu
       authorized_key:
-        user: eb
+        user: "{{ user }}"
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlLyWGGAD+jPIap+hCSvDhVyfxO/X3sk+SuTuZG4PKJ ebuntu default"
 
     - name: add ssh keys for t490
       authorized_key:
-        user: eb
+        user: "{{ user }}"
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAwOSl1vMCxFVbKpAi43keALKFlP4CWxmstZ3EOSUPWk eb-t490"
 
     - name: add ssh keys for t490
       authorized_key:
-        user: eb
+        user: "{{ user }}"
         key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAQ2jRVJo4ZoKJb6DSA3SNlsjFd5pdPIGE02kVNNPzsN ansible-t490"
 
   tasks:
