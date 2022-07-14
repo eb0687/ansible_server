@@ -1,8 +1,8 @@
 - name: download starship
   ansible.builtin.get_url:
     url: https://starship.rs/install.sh
-    dest: /tmp/starship_install.sh
+    dest: "{{ download_dir }}/starship_install.sh"
 
 - name: install starship
   ansible.builtin.shell:
-    cmd: cat /tmp/starship_install.sh | sh -s -- -y
+    cmd: cat "{{ download_dir }}/starship_install.sh" | sh -s -- -y
