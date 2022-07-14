@@ -1,11 +1,11 @@
 - name: download pfetch
-  ansible.builtin.get_url:
+  get_url:
     url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
-    dest: /tmp/pfetch
+    dest: "{{ download_dir }}/pfetch"
 
 - name: move pfetch to path
-  ansible.builtin.copy:
-    src: /tmp/pfetch
+  copy:
+    src: "{{ download_dir }}/pfetch"
     dest: /usr/local/bin/pfetch
     owner: root
     group: root
