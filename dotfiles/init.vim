@@ -84,6 +84,17 @@ vnoremap <C-q> :Commentary<CR>
 nnoremap <silent> <leader>ff :Files<CR>
 
 " ]]]
+" [[[ {{{ Harpoon }}} 
+
+nnoremap <leader>hm :lua require("harpoon.ui").toggle_quick_menu()<CR>
+nnoremap <leader>ha :lua require("harpoon.mark").add_file()<CR>
+
+nnoremap <leader>1 :lua require("harpoon.ui").nav_file(1)<CR>
+nnoremap <leader>2 :lua require("harpoon.ui").nav_file(2)<CR>
+nnoremap <leader>3 :lua require("harpoon.ui").nav_file(3)<CR>
+nnoremap <leader>4 :lua require("harpoon.ui").nav_file(4)<CR>
+
+" ]]]
 
 " ]]]
 " [[[ {{{ Plugins }}}
@@ -102,6 +113,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'nvim-lua/plenary.nvim' 
+Plug 'ThePrimeagen/harpoon'
 
 call plug#end()
 
