@@ -1,3 +1,5 @@
+---
+
 - hosts: localhost
   connection: local
   become: true
@@ -10,8 +12,6 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/dotfiles.yml
-      #    - include: tasks/starship.yml
     - include: tasks/pfetch.yml
     - include: tasks/user.yml
     - include: tasks/cron.yml
-

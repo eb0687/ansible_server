@@ -1,3 +1,5 @@
+---
+
 - name: Download pfetch.
   get_url:
     url: "https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch"
