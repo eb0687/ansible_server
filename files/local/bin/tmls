@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+###############################################################
+# Tmux FZF List
+###############################################################
+
+SESSION=$(tmux list-sessions | fzf-tmux -m -p 80%,60% --prompt=" " --header="Active tmux sessions:" --header-first)
+
+if [ $? -eq 0 ]; then
+    echo -e "\n${SESSION}"
+fi
+exit 0
