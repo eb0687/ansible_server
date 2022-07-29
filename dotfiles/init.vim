@@ -115,6 +115,14 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'nvim-lua/plenary.nvim' 
 Plug 'ThePrimeagen/harpoon'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'romgrk/barbar.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'farmergreg/vim-lastplace'
+Plug 'unblevable/quick-scope'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'windwp/nvim-autopairs'
+Plug 'nvim-lualine/lualine.nvim'
 
 call plug#end()
 
@@ -162,5 +170,27 @@ let g:fzf_colors =
       \ 'header':  ['fg', 'Comment'] }
 
 " ]]]
+" [[[ {{{ VIM-Lastplace }}}
+
+let g:lastplace_open_folds = 0
+
+" ]]]
+" [[[ {{{ Quickscope }}}
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+" Trigger a highlight only when pressing f and F.
+let g:qs_highlight_on_keys = ['f', 'F']
+
+" ]]]
+" [[[ {{{ LUA-plugins }}}
+
+source ~/.config/nvim/lua/eb/indent-blankline.lua
+source ~/.config/nvim/lua/eb/barbar.lua
+source ~/.config/nvim/lua/eb/autopair.lua
+source ~/.config/nvim/lua/eb/lualine.lua
+
+" ]]]
+
 
 " ]]]

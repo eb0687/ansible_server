@@ -9,7 +9,10 @@
   with_items:
     - .config/starship
     - .config/nvim/nvim_plug/plugged
+    - .config/nvim/lua/eb
     - .bashtools
+    - Downloads
+    - .local/bin
 
 - name: Copy configuration files.
   copy:
@@ -30,3 +33,5 @@
       dest: "/home/{{ user }}/.config/nvim/init.vim"
     - src: dotfiles/fzf-bash-completions
       dest: "/home/{{ user }}/.bashtools/fzf-bash-completion.sh"
+    - src: dotfiles/lua/eb/
+      dest: "/home/{{ user }}/.config/nvim/lua/eb/"

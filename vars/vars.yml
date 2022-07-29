@@ -3,3 +3,5 @@
 download_dir: /tmp
 user: eb
 group: eb
+neovim_version: v0.7.2
+
