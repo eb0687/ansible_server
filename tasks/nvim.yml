@@ -1,9 +1,13 @@
 ---
 
-- name: clone my nvim configs from github
+- name: clear out old nvim configs.
+  ansible.builtin.file:
+    path: "/home/{{ user }}/.config/nvim"
+    state: absent
+
+- name: clone my nvim configs from github.
   ansible.builtin.git:
     repo: https://github.com/eb0687/nvim.git
     dest: "/home/{{ user }}/.config/nvim"
-    version: main
   become: true
   become_user: "{{ user }}"
