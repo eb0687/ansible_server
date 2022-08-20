@@ -14,4 +14,3 @@
 - name: Install neovim from releases page.
   apt:
     deb: "https://github.com/neovim/neovim/releases/download/{{ neovim_version }}/nvim-linux64.deb"
-
