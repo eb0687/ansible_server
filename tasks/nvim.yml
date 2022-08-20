@@ -1,0 +1,9 @@
+---
+
+- name: clone my nvim configs from github
+  ansible.builtin.git:
+    repo: https://github.com/eb0687/nvim.git
+    dest: "/home/{{ user }}/.config/nvim"
+  become: yes
+  become_user: "{{ user }}"
+

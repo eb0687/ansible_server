@@ -12,6 +12,7 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/dotfiles.yml
+    - include: tasks/nvim.yml
     - include: tasks/tmux_utils.yml
     - include: tasks/pfetch.yml
     - include: tasks/user.yml
