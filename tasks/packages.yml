@@ -11,6 +11,7 @@
       - bat
       - python3-pip
       - cockpit
+      - nmap
 
 - name: Install neovim from releases page.
   apt:
