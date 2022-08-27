@@ -10,6 +10,7 @@
       - tree
       - bat
       - python3-pip
+      - cockpit
 
 - name: Install neovim from releases page.
   apt:
