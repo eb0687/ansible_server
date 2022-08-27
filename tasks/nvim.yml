@@ -9,5 +9,7 @@
   ansible.builtin.git:
     repo: https://github.com/eb0687/nvim.git
     dest: "/home/{{ user }}/.config/nvim"
+    clone: true
+    update: true
   become: true
   become_user: "{{ user }}"
